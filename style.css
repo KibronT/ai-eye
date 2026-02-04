@@ -1,0 +1,529 @@
+/* ===== CSS Reset & Base Styles ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-blue: #4285f4;
+  --primary-blue-light: #c5d8f9;
+  --text-dark: #1a1a1a;
+  --text-gray: #666666;
+  --text-light: #888888;
+  --bg-white: #ffffff;
+  --bg-gray: #f5f5f5;
+  --border-gray: #e0e0e0;
+  --card-bg: #f8f8f8;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Header & Navigation ===== */
+.header {
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--text-dark);
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-blue-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: var(--text-dark);
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo-icon::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: var(--bg-white);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -11px;
+  margin-top: -4px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  border: 2px solid var(--primary-blue);
+  text-align: center;
+}
+
+.nav-link.active,
+.nav-link.filled {
+  background-color: var(--primary-blue);
+  color: var(--bg-white);
+}
+
+.nav-link.outline {
+  background-color: transparent;
+  color: var(--text-dark);
+}
+
+.nav-link:hover {
+  background-color: var(--primary-blue);
+  color: var(--bg-white);
+}
+
+/* ===== Main Content ===== */
+.main {
+  padding: 40px 0 60px;
+}
+
+/* ===== Section Styles ===== */
+.section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin-bottom: 24px;
+}
+
+/* ===== Two Column Layout ===== */
+.two-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.two-column .column {
+  flex: 1;
+}
+
+/* ===== Video Placeholder ===== */
+.video-placeholder {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-placeholder .play-button {
+  width: 60px;
+  height: 60px;
+  background-color: #ff0000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-placeholder .play-button::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 4px;
+}
+
+.video-placeholder-text {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+/* Large video placeholder */
+.video-placeholder.large {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* ===== Video Grid ===== */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card .video-placeholder {
+  aspect-ratio: 16/9;
+  margin-bottom: 12px;
+}
+
+.video-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.video-card-description {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+/* ===== Info Cards ===== */
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.info-card-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.info-card-icon.circle {
+  background-color: var(--text-dark);
+}
+
+.info-card-icon.diamond {
+  background-color: var(--primary-blue);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.info-card-icon.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid var(--text-dark);
+  background: none;
+  border-radius: 0;
+}
+
+.info-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info-card-text {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.info-card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.info-card ul li {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-bottom: 6px;
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.cta-title {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: var(--primary-blue);
+  color: var(--bg-white);
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #3367d6;
+}
+
+/* ===== Download Link ===== */
+.download-link {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  text-decoration: underline;
+  margin-top: 40px;
+}
+
+.download-link:hover {
+  color: var(--primary-blue);
+}
+
+/* ===== Extension Instructions ===== */
+.instructions {
+  max-width: 800px;
+}
+
+.instructions-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.instructions-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.instruction-step {
+  margin-bottom: 40px;
+}
+
+.instruction-step p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.screenshot-placeholder {
+  background-color: var(--bg-gray);
+  border: 2px dashed var(--border-gray);
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.screenshot-placeholder.large {
+  padding: 60px 40px;
+}
+
+/* ===== Scams Page ===== */
+.scams-hero {
+  margin-bottom: 40px;
+}
+
+.scams-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.scams-label {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin-bottom: 12px;
+}
+
+.scams-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.scams-description {
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ===== About Page ===== */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.about-logo {
+  max-width: 280px;
+}
+
+.about-text {
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* ===== Responsive Styles ===== */
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+  }
+
+  .two-column {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .header {
+    padding: 30px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .video-placeholder.large {
+    max-width: 600px;
+  }
+
+  .about-logo {
+    max-width: 350px;
+  }
+
+  .about-text {
+    font-size: 1.125rem;
+  }
+
+  .scams-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+  .nav-link {
+    padding: 12px 30px;
+  }
+}

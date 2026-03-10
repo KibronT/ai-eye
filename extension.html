@@ -3,73 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eye AI - Extension</title>
+  <title>Validate AI Extension   DetectAIves Projects</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
     <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo">
-          <span class="logo-text">A Eye</span>
-          <span class="logo-icon"></span>
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="DetectAIves   Go to home page">
+          Detect<span class="logo-ai">AI</span>ves
         </a>
-        <nav class="nav">
-          <a href="index.html" class="nav-link filled">HOME</a>
-          <a href="report.html" class="nav-link filled">REPORT</a>
-          <a href="extension.html" class="nav-link outline active">EXTENSION</a>
-          <a href="scams.html" class="nav-link filled">SCAMS</a>
-          <a href="about.html" class="nav-link filled">ABOUT US</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="index.html"          class="nav-link">Home</a>
+          <a href="about.html"          class="nav-link">About</a>
+          <a href="projects.html"       class="nav-link active">Projects</a>
+          <a href="presentations.html"  class="nav-link">Presentations</a>
+          <a href="workshops.html"      class="nav-link">Workshops</a>
+          <a href="people.html"         class="nav-link">People</a>
+          <a href="contact.html"        class="nav-link">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
-  <main class="main">
-    <div class="container">
-      <section class="section instructions">
-        <h2> What is it?</h2>
-        <p class="section-subtitle">Validate AI is a Chrome extension designed to help users better understand and trust AI-generated responses. When an AI provides an answer, the extension checks whether the sources it cites actually exist, evaluates the credibility of those sources, and looks for similar claims that have already been fact-checked by trusted organizations. By combining source validation, thoughtful prompt design, and fact-checking tools, the extension gives users more 
-        transparency and control, helping them decide when an AI response is reliable and when it should be questioned.</p>
+  <!-- ===== Main Content ===== -->
+  <main class="site-main" id="main-content">
 
-        <h1 class="instructions-title">How to Use Validate AI</h1>
-        <p class="instructions-subtitle">Steps:</p>
-        
-<!-- Step 1 -->
-<div class="instruction-step">
-  <p>1. Open the extension at the top right corner of your Chrome browser by clicking on the puzzle icon</p>
-  <div class="screenshot-placeholder large">
-    <img src="firstExtension.png" alt="Open extension screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
-  </div>
-</div>
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <p class="breadcrumb">
+          <a href="projects.html">Projects</a>
+          <span aria-hidden="true">/</span>
+          Validate AI Extension
+        </p>
+        <span class="page-hero-label">Chrome Extension &middot; 2025</span>
+        <h1 class="page-hero-title">Validate AI</h1>
+        <p class="page-hero-subtitle">
+          A Chrome extension that helps users check the reliability of AI-generated responses
+          by validating sources and surfacing relevant fact-checks.
+        </p>
+        <p class="page-hero-meta">Created by Sprintern Cohort 2025 &middot; Sprintern Program, University of Maryland</p>
+      </div>
+    </div>
 
-<!-- Step 2 -->
-<div class="instruction-step">
-  <p>2. Click on "Validate AI"</p>
-  <div class="screenshot-placeholder">
-    <img src="validateAI.png" alt="Click Validate AI screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
-  </div>
-</div>
-
-<!-- Step 3 -->
-<div class="instruction-step">
-  <p>3. Toggle features that you would like to use in the settings menu</p>
-  <div class="screenshot-placeholder">
-    <img src="toggleFeatures.png" alt="Toggle features screenshot" style="width: 100%; height: 100%; object-fit: contain;" />
-  </div>
-</div>
-
-<!-- Step 4 -->
-<div class="instruction-step">
-  <p>4. Open ChatGPT and you are all set!</p>
-</div>
+    <!-- About the Extension -->
+    <section class="section">
+      <div class="container">
+        <div class="two-column">
+          <div class="col">
+            <span class="section-label">About This Project</span>
+            <h2 class="section-title">What Is Validate AI?</h2>
+            <div class="prose">
+              <p>
+                Validate AI is a Chrome browser extension designed to help users better understand
+                and trust AI-generated responses. When an AI provides an answer, the extension:
+              </p>
+              <ul>
+                <li>Checks whether the sources it cites actually exist</li>
+                <li>Evaluates the credibility of those sources</li>
+                <li>Looks for similar claims that have already been fact-checked by trusted organizations</li>
+              </ul>
+              <p>
+                By combining source validation, thoughtful prompt design, and fact-checking tools,
+                the extension gives users more transparency and control   helping them decide when
+                an AI response is reliable and when it should be questioned.
+              </p>
+            </div>
+            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <span class="badge">Tools</span>
+              <span class="badge">Chrome Extension</span>
+              <span class="badge">Spring 2025</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="screenshot-placeholder">
+              <img src="firstExtension.png" alt="The Validate AI extension panel open in a Chrome browser, showing the puzzle icon in the top right" loading="lazy">
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- How to Use -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">How to Use It</span>
+        <h2 class="section-title">Using Validate AI   Step by Step</h2>
+        <p class="section-subtitle">Follow these steps to get started with the Validate AI Chrome extension.</p>
+
+        <!-- Step 1 -->
+        <div class="instruction-step">
+          <p><strong>Step 1.</strong> Open the extension by clicking the puzzle icon in the top right corner of your Chrome browser.</p>
+          <div class="screenshot-placeholder">
+            <img src="firstExtension.png" alt="Chrome browser toolbar showing the puzzle piece extensions icon in the top right corner" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="instruction-step">
+          <p><strong>Step 2.</strong> In the extensions menu that appears, click on "Validate AI" to open the extension panel.</p>
+          <div class="screenshot-placeholder">
+            <img src="validateAI.png" alt="The Chrome extensions dropdown menu with Validate AI listed and highlighted" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="instruction-step">
+          <p><strong>Step 3.</strong> Use the settings menu inside the extension to toggle on the features you want to use   source checking, fact-checking, and more.</p>
+          <div class="screenshot-placeholder">
+            <img src="toggleFeatures.png" alt="The Validate AI settings panel showing toggle switches for different features" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="instruction-step">
+          <p><strong>Step 4.</strong> Open ChatGPT (or another AI tool) in your browser. The extension will now work alongside it automatically.</p>
+          <div class="highlight-box">
+            <p>
+              <strong>Tip:</strong> Once the extension is set up, you do not need to open it every time.
+              It will run in the background while you use AI tools in your browser.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">Related</span>
+        <h2 class="section-title">More From the 2025 Cohort</h2>
+        <div class="card-grid-2">
+          <article class="project-card">
+            <div class="project-card-media" aria-hidden="true" style="font-size: 3rem;">📄</div>
+            <div class="project-card-body">
+              <p class="project-card-tag">Research Report &middot; 2025</p>
+              <h3 class="project-card-title">AI vs. Human: Telling the Difference</h3>
+              <p class="project-card-desc">A linguistic analysis exploring how to distinguish AI-generated content from human-written news articles.</p>
+            </div>
+            <div class="project-card-footer">
+              <a href="report.html" class="btn btn-outline btn-sm">View Project</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-media" aria-hidden="true" style="font-size: 3rem;">🎤</div>
+            <div class="project-card-body">
+              <p class="project-card-tag">Presentation &middot; 2025</p>
+              <h3 class="project-card-title">2025 Sprintern Final Presentations</h3>
+              <p class="project-card-desc">See the final presentations delivered by the 2025 Sprintern cohort covering their research and projects.</p>
+            </div>
+            <div class="project-card-footer">
+              <a href="presentations.html" class="btn btn-outline btn-sm">View Presentations</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Detect<span class="logo-ai">AI</span>ves</a>
+          <p>Building AI literacy across generations at the University of Maryland.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="presentations.html">Presentations</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="resources.html">Resources</a>
+          <a href="people.html">People</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 DetectAIves &mdash; University of Maryland</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="nav.js"></script>
 </body>
 </html>

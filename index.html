@@ -3,85 +3,274 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eye AI - Home</title>
+  <title>DetectAIves   AI Literacy Across Generations</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
     <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo">
-          <span class="logo-text">A Eye</span>
-          <span class="logo-icon"></span>
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="DetectAIves   Go to home page">
+          Detect<span class="logo-ai">AI</span>ves
         </a>
-        <nav class="nav">
-          <a href="index.html" class="nav-link outline active">HOME</a>
-          <a href="report.html" class="nav-link filled">REPORT</a>
-          <a href="extension.html" class="nav-link filled">EXTENSION</a>
-          <a href="scams.html" class="nav-link filled">SCAMS</a>
-          <a href="about.html" class="nav-link filled">ABOUT US</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="index.html"          class="nav-link active">Home</a>
+          <a href="about.html"          class="nav-link">About</a>
+          <a href="projects.html"       class="nav-link">Projects</a>
+          <a href="presentations.html"  class="nav-link">Presentations</a>
+          <a href="workshops.html"      class="nav-link">Workshops</a>
+          <a href="people.html"         class="nav-link">People</a>
+          <a href="contact.html"        class="nav-link">Contact</a>
         </nav>
       </div>
     </div>
   </header>
-  
-<main class="main">
-  <div class="container">
-    <!-- What is AI Section -->
-    <section class="section">
-      <div class="two-column">
-        <div class="column">
-          <h1 class="section-title">WHAT IS AI?</h1>
-          <p class="section-subtitle">Learn what artificial intelligence is and how it can be used safely</p>
+
+  <!-- ===== Main Content ===== -->
+  <main class="site-main" id="main-content">
+
+    <!-- Hero -->
+    <section class="home-hero">
+      <div class="container">
+        <p class="home-hero-eyebrow">An AI Literacy Initiative   University of Maryland</p>
+        <h1 class="home-hero-title">
+          Building <span class="ai-highlight">AI</span> Literacy<br>
+          Across Generations
+        </h1>
+        <p class="home-hero-desc">
+          DetectAIves is an ongoing research and education initiative focused on helping
+          people of all ages understand, question, and navigate artificial intelligence.
+          Through workshops, student projects, and community resources, we make AI
+          accessible to everyone.
+        </p>
+        <div class="home-hero-ctas">
+          <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+          <a href="about.html"    class="btn btn-outline">Learn About Us</a>
         </div>
-        <div class="column">
-          <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-            border-radius: 8px; will-change: transform;">
-            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-              src="https://www.canva.com/design/DAG7DWFm8L4/mygNW7dw9_mf-5JBRiY8Tw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-            </iframe>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Learning AI Together</h2>
+        <p class="section-subtitle">
+          DetectAIves brings together university researchers, students, and community
+          members to build practical AI literacy through workshops, hands-on projects,
+          and accessible resources.
+        </p>
+
+        <div class="feature-strip">
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="book-open"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">AI Literacy Workshops</p>
+              <p class="feature-item-text">Hands-on, community-centered workshops that teach people how to recognize, use, and question AI tools in everyday life.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="edit-3"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">Student Research and Projects</p>
+              <p class="feature-item-text">Undergraduate and graduate students develop tools, resources, and research that address real AI challenges for real people.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="users"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">Intergenerational Learning</p>
+              <p class="feature-item-text">Our programs especially focus on older adults and community members who may feel left behind by rapidly changing technology.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-      <!-- AI in Real Life Section -->
-      <section class="section">
-        <h2 class="section-title">AI IN REAL LIFE</h2>
-        <p class="section-subtitle" style="max-width: 800px;">
-          Artificial intelligence (AI) is used to create videos, images, voices, and written content that can look very realistic. While many AI tools are helpful, some content created by AI may be misleading or confusing. When viewing digital content, it is important to pause and look carefully. Learning how to recognize AI-generated content can help you better understand what you see online and make informed decisions.
+    <!-- Featured Projects -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-label">Projects</span>
+            <h2 class="section-title">Student Work and Tools</h2>
+          </div>
+          <a href="projects.html" class="btn btn-outline btn-sm">View All Five Projects</a>
+        </div>
+        <p class="section-subtitle">
+          The Spring 2025 Sprintern cohort produced five projects during the three-week
+          workshop program. Two are featured below.
         </p>
 
-        <div class="video-grid">
-          <div class="video-card">
-            <div class="video-placeholder">
-              <div class="play-button"></div>
-              <p class="video-placeholder-text">Video Placeholder</p>
+        <div class="card-grid">
+
+          <article class="project-card">
+            <div class="project-card-media">
+              <img src="firstExtension.png" alt="Screenshot of the Validate AI Chrome extension interface" loading="lazy">
             </div>
-            <h3 class="video-card-title">AI and Your Data</h3>
-            <p class="video-card-description">Data privacy is how your data is being collect online. How can you protect yourself and how does AI collect information?</p>
+            <div class="project-card-body">
+              <p class="project-card-tag">Chrome Extension, Spring 2025</p>
+              <h3 class="project-card-title">Validate AI</h3>
+              <p class="project-card-desc">A Chrome extension that helps users verify AI-generated responses by checking source credibility and surfacing relevant fact-checks.</p>
+              <p class="project-card-meta">Sprintern Cohort, Spring 2025</p>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge">Tool</span>
+              <a href="extension.html" class="btn btn-outline btn-sm">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-media">
+              <div class="project-media-placeholder">
+                <i data-feather="file-text"></i>
+                <span>Research Report</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-card-tag">Research Report, Spring 2025</p>
+              <h3 class="project-card-title">AI vs. Human: Telling the Difference</h3>
+              <p class="project-card-desc">A research report analyzing linguistic patterns to help readers identify key differences between AI-generated and human-written news articles.</p>
+              <p class="project-card-meta">Sprintern Cohort, Spring 2025</p>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge">Research</span>
+              <a href="report.html" class="btn btn-outline btn-sm">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-media">
+              <div class="project-media-placeholder">
+                <i data-feather="calendar"></i>
+                <span>Coming Summer 2026</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <p class="project-card-tag">Summer 2026</p>
+              <h3 class="project-card-title">Summer 2026 Cohort Projects</h3>
+              <p class="project-card-desc">Projects from the upcoming June 2026 workshop cohort will be featured here when the program concludes.</p>
+              <p class="project-card-meta">Sprintern Cohort, Summer 2026</p>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge badge-green">Upcoming</span>
+              <a href="workshops.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Workshop Banner -->
+    <section class="section" style="padding-top: 0; border-top: none;">
+      <div class="container">
+        <div class="upcoming-banner">
+          <div>
+            <p class="upcoming-banner-tag">Upcoming, June 2026</p>
+            <p class="upcoming-banner-title">New Workshop Cohort This Summer</p>
+            <p class="upcoming-banner-desc">
+              DetectAIves is returning for another three-week workshop program in June 2026.
+              Students will research AI topics, build tools, and create resources for community use.
+            </p>
           </div>
-          <div class="video-card">
-            <div class="video-placeholder">
-              <div class="play-button"></div>
-              <p class="video-placeholder-text">Video Placeholder</p>
+          <a href="workshops.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Is AI Resource -->
+    <section class="section">
+      <div class="container">
+        <div class="two-column">
+          <div class="col">
+            <span class="section-label">Educational Resource</span>
+            <h2 class="section-title">What Is AI?</h2>
+            <p class="section-subtitle">
+              New to artificial intelligence? This introductory presentation explains what
+              AI is, how it works, and why understanding it matters for daily life.
+            </p>
+            <a href="resources.html" class="btn btn-outline btn-sm">Browse All Resources</a>
+          </div>
+          <div class="col">
+            <div class="embed-wrapper">
+              <iframe
+                loading="lazy"
+                src="https://www.canva.com/design/DAG7DWFm8L4/mygNW7dw9_mf-5JBRiY8Tw/view?embed"
+                allowfullscreen
+                allow="fullscreen"
+                title="What is AI? Introductory presentation">
+              </iframe>
             </div>
-            <h3 class="video-card-title">How to Talk to AI</h3>
-            <p class="video-card-description">Talking to AI is simple. Be clear and learn how to get the response you desire.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- CTA Section -->
-      <section class="cta-section">
-        <h2 class="cta-title">Check What You Learned</h2>
-        <a href="https://www.canva.com/design/DAG-mlmMZaQ/ujnaOpQgWi6c_srT9ZiLXg/view?utm_content=DAG-mlmMZaQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0c9b42dd6d#2" class="cta-button" target="_blank" rel="noopener noreferrer">TEST YOURSELF</a>
-      </section>
-    </div>
+    <!-- People preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-label">People</span>
+            <h2 class="section-title">The DetectAIves Community</h2>
+          </div>
+          <a href="people.html" class="btn btn-outline btn-sm">Meet Everyone</a>
+        </div>
+        <p class="section-subtitle">
+          DetectAIves is driven by researchers, graduate students, and undergraduate
+          Sprinterns at the University of Maryland who share a commitment to accessible
+          AI education.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
+          <a href="people.html" class="btn btn-outline btn-sm">Research Team</a>
+          <a href="people.html" class="btn btn-outline btn-sm">Meet the Sprinterns</a>
+        </div>
+      </div>
+    </section>
+
+
   </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Detect<span class="logo-ai">AI</span>ves</a>
+          <p>Building AI literacy across generations at the University of Maryland.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="presentations.html">Presentations</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="resources.html">Resources</a>
+          <a href="people.html">People</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 DetectAIves &mdash; University of Maryland</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="nav.js"></script>
 </body>
 </html>

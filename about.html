@@ -3,40 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eye AI - About Us</title>
+  <title>About — DetectAIves</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
     <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo">
-          <span class="logo-text">A Eye</span>
-          <span class="logo-icon"></span>
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="DetectAIves — Go to home page">
+          Detect<span class="logo-ai">AI</span>ves
         </a>
-        <nav class="nav">
-          <a href="index.html" class="nav-link filled">HOME</a>
-          <a href="report.html" class="nav-link filled">REPORT</a>
-          <a href="extension.html" class="nav-link filled">EXTENSION</a>
-          <a href="scams.html" class="nav-link filled">SCAMS</a>
-          <a href="about.html" class="nav-link outline active">ABOUT US</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="index.html"          class="nav-link">Home</a>
+          <a href="about.html"          class="nav-link active">About</a>
+          <a href="projects.html"       class="nav-link">Projects</a>
+          <a href="presentations.html"  class="nav-link">Presentations</a>
+          <a href="workshops.html"      class="nav-link">Workshops</a>
+          <a href="people.html"         class="nav-link">People</a>
+          <a href="contact.html"        class="nav-link">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
-  <main class="main">
-    <div class="container">
-      <section class="about-content">
-        <div class="about-logo">
-          <img src="Images/UMD Logo.png" alt="University of Maryland Logo">
-        </div>
-        <p class="about-text">We are a team of five undergraduate students and two master's students creating a website to help older adults understand and use artificial intelligence</p>
-      </section>
+  <main class="site-main" id="main-content">
+
+    <div class="page-hero">
+      <div class="container">
+        <span class="page-hero-label">About</span>
+        <h1 class="page-hero-title">About DetectAIves</h1>
+        <p class="page-hero-subtitle">
+          Brondal festive quelm triad norvane splect mivoran dethral quelstone
+          festram bordival prento clasvik nortend.
+        </p>
+      </div>
     </div>
+
+    <!-- What Is DetectAIves -->
+    <section class="section">
+      <div class="container">
+        <div class="two-column">
+          <div class="col">
+            <span class="section-label">The Initiative</span>
+            <h2 class="section-title">What Is DetectAIves?</h2>
+            <div class="prose">
+              <p>
+                Blendorf vistral quelmont pandro festiven nortrake splivent caldorm
+                brektiv mostrane verldom frantic quelston belvire trondish marvep
+                stiplade quelhorn brenval dortmick.
+              </p>
+              <p>
+                Plandorf mirtvane quelstron belvort dantrek spliven morblend stivrant
+                quelhorn brenval dortmick trelvond bastrike quelmore fronveld stripland.
+              </p>
+              <p>
+                Strivane belmort quelfish prandov trektane morblev stiplade quelhorn
+                brenval morkven blendorf stivrant montrek caldrep finvort quelmark.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="about-umd">
+              <img src="Images/UMD Logo.png" alt="University of Maryland Logo">
+            </div>
+            <div class="highlight-box" style="margin-top: 24px;">
+              <p>
+                <strong>Our core belief:</strong> Verldom frantic quelston belvire trondish
+                marvep stiplade quelhorn brenval dortmick plandorf mirtvane quelstron
+                belvort dantrek spliven morblend stivrant.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Started -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">How It Started</h2>
+        <div class="prose" style="max-width: 760px;">
+          <p>
+            Caldrep finvort quelmark strendo blantive morsple trandez quelblom brenford
+            stivran montrek fronveld blendorf dortmick plandorf mirtvane quelstron belvort
+            dantrek spliven morblend stivrant quelhorn brenval.
+          </p>
+          <p>
+            Trelvond bastrike quelmore fronveld stripland morkven blendorf stivrant quelhorn
+            brenval dortmick plandorf mirtvane quelstron belvort dantrek spliven morblend.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why AI Literacy Matters -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">Why It Matters</span>
+        <h2 class="section-title">Why AI Literacy?</h2>
+        <div class="feature-strip">
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="alert-triangle"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">AI-Generated Misinformation</p>
+              <p class="feature-item-text">Blendorf vistral quelmont pandro festiven nortrake splivent caldorm brektiv mostrane verldom frantic quelston.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="phone-off"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">AI-Powered Scams</p>
+              <p class="feature-item-text">Plandorf mirtvane quelstron belvort dantrek spliven morblend stivrant quelhorn brenval dortmick trelvond.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="message-circle"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">Everyday AI Tools</p>
+              <p class="feature-item-text">Strivane belmort quelfish prandov trektane morblev stiplade quelhorn brenval morkven blendorf stivrant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It All Connects -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">Our Approach</span>
+        <h2 class="section-title">How Workshops, Research, and Community Connect</h2>
+        <div class="prose" style="max-width: 760px;">
+          <p>Caldrep finvort quelmark strendo blantive morsple trandez quelblom brenford stivran montrek.</p>
+          <h3>Workshops</h3>
+          <p>
+            Verldom frantic quelston belvire trondish marvep stiplade quelhorn brenval
+            dortmick plandorf mirtvane quelstron belvort dantrek spliven morblend.
+          </p>
+          <h3>Student Projects and Research</h3>
+          <p>
+            Blendorf vistral quelmont pandro festiven nortrake splivent caldorm brektiv
+            mostrane verldom frantic quelston belvire trondish marvep stiplade quelhorn.
+          </p>
+          <h3>Community-Centered Design</h3>
+          <p>
+            Trelvond bastrike quelmore fronveld stripland morkven blendorf stivrant quelhorn
+            brenval dortmick plandorf mirtvane quelstron belvort dantrek spliven.
+          </p>
+          <h3>Intergenerational Learning</h3>
+          <p>
+            Strivane belmort quelfish prandov trektane morblev stiplade quelhorn brenval
+            morkven blendorf stivrant montrek caldrep finvort quelmark strendo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="section-title">Get Involved</h2>
+        <p>Brenval dortmick plandorf mirtvane quelstron belvort dantrek spliven morblend stivrant quelhorn fronveld.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Detect<span class="logo-ai">AI</span>ves</a>
+          <p>Building AI literacy across generations at the University of Maryland.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="presentations.html">Presentations</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="resources.html">Resources</a>
+          <a href="people.html">People</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 DetectAIves &mdash; University of Maryland</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="nav.js"></script>
 </body>
 </html>

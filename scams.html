@@ -3,54 +3,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eye AI - Scams</title>
+  <title>Common AI Scams   DetectAIves Resources</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
     <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo">
-          <span class="logo-text">A Eye</span>
-          <span class="logo-icon"></span>
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="DetectAIves   Go to home page">
+          Detect<span class="logo-ai">AI</span>ves
         </a>
-        <nav class="nav">
-          <a href="index.html" class="nav-link filled">HOME</a>
-          <a href="report.html" class="nav-link filled">REPORT</a>
-          <a href="extension.html" class="nav-link filled">EXTENSION</a>
-          <a href="scams.html" class="nav-link outline active">SCAMS</a>
-          <a href="about.html" class="nav-link filled">ABOUT US</a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="index.html"          class="nav-link">Home</a>
+          <a href="about.html"          class="nav-link">About</a>
+          <a href="projects.html"       class="nav-link">Projects</a>
+          <a href="presentations.html"  class="nav-link">Presentations</a>
+          <a href="workshops.html"      class="nav-link">Workshops</a>
+          <a href="people.html"         class="nav-link">People</a>
+          <a href="contact.html"        class="nav-link">Contact</a>
         </nav>
       </div>
     </div>
   </header>
-  
-<main class="main">
-  <div class="container">
-    <!-- Scams Video Section -->
-    <section class="section scams-hero">
-      <div style="max-width: 100%; aspect-ratio: 16/9;">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/MmYLt8Mntqs?start=1"
-          title="AI Scams Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          style="display: block;">
-        </iframe>
+
+  <main class="site-main" id="main-content">
+
+    <div class="page-hero">
+      <div class="container">
+        <p class="breadcrumb">
+          <a href="resources.html">Resources</a>
+          <span aria-hidden="true">/</span>
+          AI Scam Awareness
+        </p>
+        <span class="page-hero-label">Scam Awareness, Educational Resource</span>
+        <h1 class="page-hero-title">Common AI Scams</h1>
+        <p class="page-hero-subtitle">
+          Learn how artificial intelligence is being used in scams and what warning signs
+          to watch for, so you can protect yourself and the people you care about.
+        </p>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <section class="section">
+      <div class="container">
+        <div class="two-column">
+          <div class="col">
+            <span class="section-label">Video Resource</span>
+            <h2 class="section-title">Understanding AI Scams</h2>
+            <p class="section-subtitle">
+              This video explains how artificial intelligence can be used in scams and
+              highlights common warning signs to help you stay informed and stay safe.
+            </p>
+            <div class="highlight-box">
+              <p>
+                <strong>Remember:</strong> If you receive an unexpected call, message, or video
+                that seems urgent or unusual, even if it sounds like someone you know, slow down.
+                Verify with a trusted source before acting.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="embed-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MmYLt8Mntqs?start=1"
+                title="AI Scams Awareness Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Scams Content -->
-    <section class="scams-content">
-      <p class="scams-label">Understanding AI Scams</p>
-      <h1 class="scams-title">Common AI Scams</h1>
-      <p class="scams-description">This video explains how artificial intelligence can be used in scams and highlights common warning signs to help you stay informed.</p>
+    <!-- Common Scam Types -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">What to Watch For</span>
+        <h2 class="section-title">Common Types of AI Scams</h2>
+        <p class="section-subtitle">Scammers are using AI in new ways. Knowing what to look for is your first line of defense.</p>
+
+        <div class="card-grid">
+
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">
+              <i data-feather="volume-2"></i>
+            </div>
+            <div class="resource-card-body">
+              <p class="resource-card-title">AI Voice Cloning</p>
+              <p class="resource-card-desc">
+                Scammers can clone a person's voice using just a few seconds of audio from social
+                media. They call family members pretending to be someone in distress, often claiming
+                to need money urgently.
+              </p>
+              <p class="resource-card-type">Warning sign: Urgent requests for money, even from a familiar voice</p>
+            </div>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">
+              <i data-feather="film"></i>
+            </div>
+            <div class="resource-card-body">
+              <p class="resource-card-title">Deepfake Videos</p>
+              <p class="resource-card-desc">
+                AI can create realistic fake videos of real people, including politicians,
+                celebrities, or family members, saying things they never actually said. These
+                are used to spread false information or manipulate people.
+              </p>
+              <p class="resource-card-type">Warning sign: Video content that seems off or surprising from a trusted figure</p>
+            </div>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">
+              <i data-feather="mail"></i>
+            </div>
+            <div class="resource-card-body">
+              <p class="resource-card-title">AI-Written Phishing Messages</p>
+              <p class="resource-card-desc">
+                AI can now write highly convincing emails, texts, and messages that impersonate
+                banks, government agencies, or companies. These are harder to spot than older
+                scams because they have fewer spelling and grammar errors.
+              </p>
+              <p class="resource-card-type">Warning sign: Unsolicited messages asking for personal information or passwords</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
-  </div>
-</main>
+
+    <!-- Safety Tips -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">Protect Yourself</span>
+        <h2 class="section-title">Safety Tips</h2>
+        <div class="feature-strip">
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="pause-circle"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">Pause Before Responding</p>
+              <p class="feature-item-text">If a message or call creates urgency or panic, that is often intentional. Slow down, breathe, and verify before taking any action.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="phone-call"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">Call Back on a Known Number</p>
+              <p class="feature-item-text">If someone calls claiming to be a family member or an organization, hang up and call them back at a number you already know is real.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-feather="lock"></i>
+            </div>
+            <div>
+              <p class="feature-item-title">Never Share Personal Info Unexpectedly</p>
+              <p class="feature-item-text">No legitimate organization will ask for passwords, Social Security numbers, or bank details unexpectedly by phone, text, or email.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Resources -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">More Resources</span>
+        <h2 class="section-title">Keep Learning</h2>
+        <div class="card-grid-2">
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">
+              <i data-feather="file-text"></i>
+            </div>
+            <div class="resource-card-body">
+              <p class="resource-card-title">How to Spot AI-Generated Content</p>
+              <p class="resource-card-desc">Research-backed tips for recognizing AI-written articles, images, and other online content.</p>
+              <div style="margin-top: 12px;">
+                <a href="report.html" class="btn btn-outline btn-sm">View Research Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="resource-card">
+            <div class="resource-icon" aria-hidden="true">
+              <i data-feather="tool"></i>
+            </div>
+            <div class="resource-card-body">
+              <p class="resource-card-title">Validate AI Extension</p>
+              <p class="resource-card-desc">A tool to help you check the reliability of AI-generated responses in your browser.</p>
+              <div style="margin-top: 12px;">
+                <a href="extension.html" class="btn btn-outline btn-sm">Learn About the Extension</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Detect<span class="logo-ai">AI</span>ves</a>
+          <p>Building AI literacy across generations at the University of Maryland.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="presentations.html">Presentations</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="resources.html">Resources</a>
+          <a href="people.html">People</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 DetectAIves &mdash; University of Maryland</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

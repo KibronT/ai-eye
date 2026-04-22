@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(ls -la \"/Users/kibron/Documents/Spring 2026/Research\\(Website\\)/\")",
-      "Bash(ls -la \"/Users/kibron/Documents/Spring 2026/Research\\(Website\\)/Images/\")"
+      "Bash(ls -la \"/Users/kibron/Documents/Spring 2026/Research\\(Website\\)/Images/\")",
+      "Bash(grep -iE \"\\\\.\\(png|jpg|jpeg\\)$\")"
     ]
   }
 }

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="800" height="160">
+  <rect width="400" height="80" fill="transparent"/>
+  <text x="200" y="55" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="#1a1a1a">Detect</tspan><tspan fill="#4285f4">AI</tspan><tspan fill="#1a1a1a">ves</tspan>
+  </text>
+</svg>

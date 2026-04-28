@@ -53,6 +53,21 @@ a {
   text-decoration: none;
 }
 
+.person-card .person-name a,
+.person-card .person-role a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.person-card .person-name a:hover,
+.person-card .person-role a:hover {
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
 ul, ol {
   list-style: none;
 }

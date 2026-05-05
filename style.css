@@ -255,6 +255,26 @@ ul, ol {
   padding-top: 20px;
 }
 
+.footer-credit {
+  font-size: 0.78rem;
+  color: var(--gray-light);
+  margin-top: 6px;
+}
+
+.footer-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.footer-credit a:hover {
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
 /* ===== 6. Site Main ===== */
 .site-main {
   flex: 1;
